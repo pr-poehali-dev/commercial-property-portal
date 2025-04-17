@@ -1,13 +1,20 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import Layout from "@/components/layout/Layout";
+import Hero from "@/components/home/Hero";
+import PropertyTypes from "@/components/home/PropertyTypes";
+import Features from "@/components/home/Features";
+import PropertiesShowcase from "@/components/home/PropertiesShowcase";
+import CallToAction from "@/components/home/CallToAction";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-black">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600">тут будет отображаться ваш проект</p>
-      </div>
-    </div>
+    <Layout>
+      <Hero />
+      <PropertyTypes />
+      <Features />
+      <PropertiesShowcase />
+      <CallToAction />
+    </Layout>
   );
 };
 
